@@ -408,3 +408,16 @@ box-shadow:
   .aura { translate:none; }
 }
 @media (max-width:360px) { .count-grid { grid-template-columns:repeat(2, 1fr); } }
+/* Test: remove rectangular shadows behind the cake */
+.cake-stage,
+.cake-cam {
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.cake-fx,
+.cake-dark {
+  background: transparent !important;
+  box-shadow: none !important;
+}

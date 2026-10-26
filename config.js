@@ -111,9 +111,10 @@ window.SITE_CONFIG = {
   "gallery": {
     "title": "Our little museum",
     "photos": [
-      { "file": "photos/photo1.png", "caption": "" },
-      { "file": "photos/photo2.png", "caption": "" },
-      { "file": "photos/photo3.png", "caption": "" }
+      { "file": "photos/photo1.jpg", "caption": "" },
+      { "file": "photos/photo2.jpg", "caption": "" },
+      { "file": "photos/photo3.jpg", "caption": "" }
+      { "file": "photos/photo4.jpg", "caption": "" }
     ]
   },
   // FINAL MESSAGE. Optional "revealLabel" and "revealText" add a button that shows an

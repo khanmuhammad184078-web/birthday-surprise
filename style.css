@@ -214,7 +214,15 @@ button.glow { animation:glowPulse 3.2s ease-in-out infinite; }
   overflow: visible;
   filter: none;
 }
-.cake-fx, .cake-dark { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
+.cake-fx, .cake-dark {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: transparent !important;
+  opacity: 0 !important;
+}
 .cake-dark { background:radial-gradient(ellipse 62% 58% at 50% 55%, rgba(14,4,22,1) 0%, rgba(14,4,22,.85) 45%, rgba(14,4,22,0) 100%); opacity:0; }
 .cake-hits { position:absolute; inset:0; pointer-events:none; }
 .cake-hits .candle { position:absolute; transform:translateX(-50%); pointer-events:auto; padding:0; min-width:26px; min-height:0;

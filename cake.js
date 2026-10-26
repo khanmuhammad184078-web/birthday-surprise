@@ -320,7 +320,6 @@
       var f = flames[i];
       if (!f || f.out || f.outAt != null && state !== "lit") return;
       if (state !== "lit" && state !== "blowing") return;
-      if (reduce) { markOut(f); checkAllOut(true); return; }
       f.localT0 = time; f.outAt = time + 0.4;
       if (!gust.t0 || gust.t0 < 0) gust.t0 = time;
       kick();

@@ -206,7 +206,7 @@ button.glow { animation:glowPulse 3.2s ease-in-out infinite; }
   background:radial-gradient(circle, rgba(255,190,120,.22), rgba(255,150,70,.07) 60%, transparent 70%);
   animation:bokeh calc(14s + var(--n) * 3s) ease-in-out infinite alternate; }
 .cake-cam { position:absolute; inset:0; transform-origin:50% 62%; will-change:transform; }
-.cake-svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; filter:drop-shadow(0 14px 26px rgba(0,0,0,.45)); }
+.cake-svg { position:absolute; inset:0; width:100%; height:100%; overflow:visible; filter:none(0 14px 26px rgba(0,0,0,.45)); }
 .cake-fx, .cake-dark { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
 .cake-dark { background:radial-gradient(ellipse 62% 58% at 50% 55%, rgba(14,4,22,1) 0%, rgba(14,4,22,.85) 45%, rgba(14,4,22,0) 100%); opacity:0; }
 .cake-hits { position:absolute; inset:0; pointer-events:none; }

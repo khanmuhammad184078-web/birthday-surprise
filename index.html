@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#12060b">
+<title>A surprise for you</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#stage">Skip to content</a>
+<!-- Decorative atmosphere: CSS light layers + one lightweight canvas. Never interactive. -->
+<div id="decor" aria-hidden="true">
+  <i class="aura a1"></i><i class="aura a2"></i><i class="aura a3"></i><i class="rays"></i>
+  <canvas id="ambient"></canvas>
+</div>
+<main id="stage" tabindex="-1"></main>
+<div id="progress" aria-hidden="true"></div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<!-- Shown only when config.js sets audio.file. Sound never starts by itself. -->
+<button id="sound" class="ghost" type="button" aria-pressed="false" hidden>Sound off</button>
+<noscript><p style="padding:2rem;font-family:sans-serif;color:#f6e9dc">This surprise needs JavaScript turned on to open. Please enable it and reload.</p></noscript>
+<!-- config.js holds ALL customer-specific content. script.js and style.css are reusable logic. -->
+<script src="config.js"></script>
+<script src="cake.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

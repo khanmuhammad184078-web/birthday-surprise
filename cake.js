@@ -303,7 +303,9 @@
       if (state !== "lit") return false;
       setState("blowing"); cb("onBlowStart");
       tS = 1.07;
-      if (reduce) { instantBlow(); return true; }
+     if (reduce) {
+  reduce = false;
+}
       gust.t0 = time; addStreaks();
       var lit = ranks.map(function (c) { return flames[c.i]; }).filter(function (f) { return !f.out; });
       lit.forEach(function (f, k) {
